@@ -1,12 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { AddressListComponent } from './address-list/address-list.component';
-import { AddressViewComponent } from './address-view/address-view.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {AddressListElementComponent} from './address-list/address-list-element/address-list-element.component';
+import { AddressViewComponent } from './address-list/address-view/address-view.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +14,13 @@ import {AddressListElementComponent} from './address-list/address-list-element/a
     HeaderComponent,
     AddressListElementComponent,
     AddressListComponent,
-    AddressViewComponent,
-    AddressListElementComponent
+    AddressListElementComponent,
+    AddressViewComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
